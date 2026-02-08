@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>大学生用 家計簿</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>💸 大学生の家計簿</h1>
+
+  <div class="form">
+    <input type="date" id="date">
+    <input type="text" id="category" placeholder="項目（食費・交通費など）">
+    <input type="number" id="amount" placeholder="金額">
+    <button onclick="addExpense()">追加</button>
+  </div>
+
+  <h2>支出一覧</h2>
+  <ul id="expenseList"></ul>
+
+  <h2>合計: <span id="total">0</span> 円</h2>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
